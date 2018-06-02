@@ -8,7 +8,7 @@ import * as fs from "fs-extra";
 import * as path from "path";
 
 // config
-const baseUrl = "http://sange.fi/esoteric/brainfuck/";
+const baseUrl = "";
 const recursive = true;
 const outDir = "./out";
 
