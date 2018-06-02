@@ -8,13 +8,15 @@ import * as fs from "fs-extra";
 import * as path from "path";
 
 // config
-const baseUrl = "";
+const baseUrl = "http://sange.fi/esoteric/brainfuck/";
 const recursive = true;
 const outDir = "./out";
 
 async function downloadApacheFile(url: string): Promise<Buffer> {
   console.log("Downloading: " + url);
-  const response = await axios.get(url);
+  const response = await axios.get(url, {
+    responseType: 'arraybuffer'
+  });
   console.log("Downloaded: " + url);
   return response.data;
 }
