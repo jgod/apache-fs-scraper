@@ -7,7 +7,7 @@ import urlJoin from "url-join";
 import * as fs from "fs-extra";
 import * as path from "path";
 
-// config
+// configuration
 const baseUrl = "";
 const recursive = true;
 const outDir = "./out";
